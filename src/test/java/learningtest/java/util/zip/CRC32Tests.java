@@ -26,6 +26,13 @@ class CRC32Tests {
 
         crc32.update("HelloWorld".getBytes());
         assertThat(crc32.getValue()).isEqualTo(value);
+
+        crc32.reset();
+        assertThat(crc32.getValue()).isZero();
+
+        crc32.update("World".getBytes());
+        crc32.update("Hello".getBytes());
+        assertThat(crc32.getValue()).isNotEqualTo(value);
     }
 
 }
