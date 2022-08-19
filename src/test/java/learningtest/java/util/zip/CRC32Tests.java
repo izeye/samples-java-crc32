@@ -7,7 +7,7 @@ import java.util.zip.CRC32;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Tests for {@link java.util.zip.CRC32}.
+ * Tests for {@link CRC32}.
  *
  * @author Johnny Lim
  */
